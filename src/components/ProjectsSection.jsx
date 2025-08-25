@@ -3,32 +3,43 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "FinCrypt: DeFi Lending Platform",
+    description:
+      "Engineered a DeFi lending platform with React.js, Express.js, and MongoDB, integrating multi-functional pages for loans, deposits, investments, and an NFT marketplace with real-time dashboards. Integrated MetaMask for secure cryptocurrency transactions, enabling decentralized lending, borrowing, and NFT trading. Deployed secure, gas-efficient Ethereum smart contracts in Solidity using Hardhat.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    tags: ["React.js", "Express.js", "MongoDB", "Solidity", "Hardhat", "Ethereum", "MetaMask", "Tailwind CSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/aditiisinha/DeFi-Lending",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "E-retail Management Platform with CI/CD Pipeline",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "Architected a secure two-tier e-commerce platform with containerized React frontend and Node.js/Express backend, integrating user authentication. Developed a full product catalog management system (CRUD) via RESTful APIs, tested with Postman. Automated AWS deployment with Terraform and Jenkins CI/CD for Docker builds and infrastructure provisioning.",
+    image: "/projects/project2.jpeg",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Docker", "AWS", "Terraform", "Jenkins"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/aditiisinha/e-dashboard",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "BudgetWise: Dynamic Budget Tracking Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+      "Built a real-time finance platform using Next.js, Supabase, and PostgreSQL (via Prisma) for budgeting and expense tracking. Integrated AI-driven insights and automated budgeting with Inngest and ArcJet for secure, serverless automation. Designed a responsive UI using Tailwind CSS and Shadcn UI, improving user experience across devices.",
+    image: "/projects/project3.jpeg",
+    tags: ["Next.js", "Supabase", "Prisma", "PostgreSQL", "Inngest", "ArcJet", "Tailwind CSS", "Shadcn UI"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/aditiisinha/AI_Finance_Tracker",
+  },
+  {
+    id: 4,
+    title: "AI-Powered Image Generator",
+    description:
+      "Built a browser-based AI image generation platform using HTML, CSS, and JavaScript, enabling creation of high-quality, customizable visuals. Integrated AI APIs for text-to-image generation with real-time rendering, downloads, and advanced features like prompt customization, style selection, and resolution control.",
+    image: "/projects/project4.png",
+    tags: ["HTML", "CSS", "JavaScript", "AI APIs", "Responsive Design"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/aditiisinha/ai-image-generator",
   },
 ];
 
@@ -100,7 +111,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/aditiisinha"
           >
             Check My Github <ArrowRight size={16} />
           </a>

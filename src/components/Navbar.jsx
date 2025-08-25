@@ -34,10 +34,7 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground"> PedroTech </span>{" "}
-            Portfolio
-          </span>
+          {/* Logo or site name removed */}
         </a>
 
         {/* desktop nav */}

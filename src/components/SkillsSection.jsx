@@ -6,21 +6,29 @@ const skills = [
   { name: "HTML/CSS", level: 95, category: "frontend" },
   { name: "JavaScript", level: 90, category: "frontend" },
   { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "Next.js", level: 80, category: "frontend" },
+  { name: "ethers.js", level: 85, category: "frontend" },
 
   // Backend
   { name: "Node.js", level: 80, category: "backend" },
+  { name: "Java", level: 85, category: "backend" },
   { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "MongoDB", level: 90, category: "backend" },
+  { name: "MySQL", level: 90, category: "backend" },
+  { name: "PostgreSQL", level: 60, category: "backend" },
+  { name: "Ethereum", level: 80, category: "backend" },
+  { name: "Solana", level: 75, category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
+  { name: "AWS", level: 80, category: "tools" },
+  { name: "EC2", level: 80, category: "tools" },
+  { name: "S3", level: 80, category: "tools" },
+  { name: "Solidity", level: 85, category: "tools" },
+  { name: "Hardhat", level: 80, category: "tools" },
+  { name: "Terraform", level: 75, category: "tools" },
+  { name: "Docker", level: 80, category: "tools" },
+  { name: "Jenkins", level: 70, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
 ];
 
