@@ -1,119 +1,179 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 
+import project1 from "@/assets/projects/project1.png";
+import project2 from "@/assets/projects/project2.jpeg";
+import project4 from "@/assets/projects/project4.png";
+import summarium from "@/assets/projects/summarium_v2.png";
+import rfp from "@/assets/projects/rfp_v2.png";
+import techpilot from "@/assets/projects/techpilot_v2.png";
+import datatable from "@/assets/projects/datatable_v2.png";
+
 const projects = [
   {
     id: 1,
-    title: "FinCrypt: DeFi Lending Platform",
+    title: "Summarium: AI SaaS PDF Summarizer",
     description:
-      "Engineered a DeFi lending platform with React.js, Express.js, and MongoDB, integrating multi-functional pages for loans, deposits, investments, and an NFT marketplace with real-time dashboards. Integrated MetaMask for secure cryptocurrency transactions, enabling decentralized lending, borrowing, and NFT trading. Deployed secure, gas-efficient Ethereum smart contracts in Solidity using Hardhat.",
-    image: "/projects/project1.png",
-    tags: ["React.js", "Express.js", "MongoDB", "Solidity", "Hardhat", "Ethereum", "MetaMask", "Tailwind CSS"],
+      "Built a full-stack AI SaaS platform that enables secure PDF uploads and converts them into concise, visually appealing, and interactive summaries. Features role-based dashboards and optimized text processing.",
+    image: summarium,
+    tags: ["Next.js", "React 19", "TypeScript", "Tailwind", "OpenAI", "Gemini", "LangChain"],
     demoUrl: "#",
-    githubUrl: "https://github.com/aditiisinha/DeFi-Lending",
+    githubUrl: "https://github.com/aditiisinha/pdf_summarizer",
   },
   {
     id: 2,
-    title: "E-retail Management Platform with CI/CD Pipeline",
+    title: "AI-Powered RFP Management System",
     description:
-      "Architected a secure two-tier e-commerce platform with containerized React frontend and Node.js/Express backend, integrating user authentication. Developed a full product catalog management system (CRUD) via RESTful APIs, tested with Postman. Automated AWS deployment with Terraform and Jenkins CI/CD for Docker builds and infrastructure provisioning.",
-    image: "/projects/project2.jpeg",
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Docker", "AWS", "Terraform", "Jenkins"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/aditiisinha/e-dashboard",
+      "Developed an AI-powered platform automating proposal creation from natural language. Features an intelligent ranking algorithm and automated SMTP/IMAP parsing for vendor responses.",
+    image: rfp,
+    tags: ["React", "Node.js", "Gemini", "MongoDB", "SMTP/IMAP"],
+    demoUrl: "https://rfp-deployed.vercel.app/",
+    githubUrl: "https://github.com/aditiisinha/RFP_DEPLOYED",
   },
   {
     id: 3,
-    title: "BudgetWise: Dynamic Budget Tracking Platform",
+    title: "E-retail Management Platform",
     description:
-      "Built a real-time finance platform using Next.js, Supabase, and PostgreSQL (via Prisma) for budgeting and expense tracking. Integrated AI-driven insights and automated budgeting with Inngest and ArcJet for secure, serverless automation. Designed a responsive UI using Tailwind CSS and Shadcn UI, improving user experience across devices.",
-    image: "/projects/project3.jpeg",
-    tags: ["Next.js", "Supabase", "Prisma", "PostgreSQL", "Inngest", "ArcJet", "Tailwind CSS", "Shadcn UI"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/aditiisinha/AI_Finance_Tracker",
+      "Architected a secure two-tier e-commerce platform with containerized React frontend and Node.js/Express backend. Automated AWS deployment with Terraform and Jenkins CI/CD.",
+    image: project2,
+    tags: ["React.js", "Node.js", "Docker", "AWS", "Terraform", "Jenkins"],
+    demoUrl: null,
+    githubUrl: "https://github.com/aditiisinha/E-Retail-Managment-Platfform",
   },
   {
     id: 4,
+    title: "FinCrypt: DeFi Lending Platform",
+    description:
+      "Engineered a decentralized lending platform on Ethereum with real-time dashboards and an NFT marketplace. Integrated MetaMask for secure cryptocurrency transactions.",
+    image: project1,
+    tags: ["React.js", "Solidity", "Web3.js", "MongoDB", "Hardhat"],
+    demoUrl: null,
+    githubUrl: "https://github.com/aditiisinha/DeFi-Lending",
+  },
+  {
+    id: 5,
     title: "AI-Powered Image Generator",
     description:
-      "Built a browser-based AI image generation platform using HTML, CSS, and JavaScript, enabling creation of high-quality, customizable visuals. Integrated AI APIs for text-to-image generation with real-time rendering, downloads, and advanced features like prompt customization, style selection, and resolution control.",
-    image: "/projects/project4.png",
-    tags: ["HTML", "CSS", "JavaScript", "AI APIs", "Responsive Design"],
-    demoUrl: "#",
+      "Built a browser-based AI image generation platform enabling high-quality visual creation from text prompts using advanced AI APIs with real-time rendering.",
+    image: project4,
+    tags: ["HTML", "CSS", "JavaScript", "AI API"],
+    demoUrl: "https://ai-image-generator-gamma-five.vercel.app/",
     githubUrl: "https://github.com/aditiisinha/ai-image-generator",
+  },
+  {
+    id: 6,
+    title: "TechPilot: Educational Platform",
+    description:
+      "A modern educational platform showcasing courses and reviews. Features dynamic routing, interactive testimonials with Framer Motion, and a clean responsive UI.",
+    image: techpilot,
+    tags: ["React", "Vite", "Tailwind CSS", "Framer Motion", "Swiper"],
+    demoUrl: "https://techpilot-oyew.vercel.app/",
+    githubUrl: "https://github.com/aditiisinha/techpilot",
+  },
+  {
+    id: 7,
+    title: "PrimeReact Paginated DataTable",
+    description:
+      "A server-side paginated DataTable with persistent row selection across pages. optimized for performance by fetching data only when needed.",
+    image: datatable,
+    tags: ["React 18", "TypeScript", "Vite", "PrimeReact"],
+    demoUrl: "https://art-table1.netlify.app/",
+    githubUrl: "https://github.com/aditiisinha/art-table",
   },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24 px-4 relative">
+    <section id="projects" className="py-32 px-4 relative bg-background/50">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          {" "}
-          Featured <span className="text-primary"> Projects </span>
-        </h2>
+        <div className="text-center mb-20 animate-fade-in-up">
+          <span className="text-primary font-mono text-sm tracking-wider uppercase mb-2 block">
+            Portfolio
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Featured <span className="text-primary">Projects</span>
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            A collection of applications focusing on clean code, performance, and user experience.
+          </p>
+        </div>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+        <div className="space-y-24">
+          {projects.map((project, index) => (
             <div
-              key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              key={project.id}
+              className={`flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } gap-8 md:gap-16 items-center group`}
             >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+              {/* Image Side */}
+              <div className="w-full md:w-3/5 relative">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 group-hover:border-primary/50 transition-colors duration-500">
+                  <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                {/* Decorative Blur */}
+                <div className={`absolute -inset-4 bg-primary/20 blur-3xl -z-10 opacity-0 group-hover:opacity-40 transition-opacity duration-500 rounded-[3rem] ${index % 2 === 0 ? '-right-4' : '-left-4'}`} />
               </div>
 
-              <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+              {/* Content Side */}
+              <div className="w-full md:w-2/5 flex flex-col gap-6 text-left">
+                <div>
+                  <span className="text-primary font-mono text-xs tracking-widest uppercase mb-2 block">
+                    0{index + 1}
+                  </span>
+                  <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 group-hover:from-primary group-hover:to-purple-500 transition-all duration-300">
+                    {project.title}
+                  </h3>
+                </div>
+
+                <div className="p-6 bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+                  <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    {project.description}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                  {project.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 text-xs font-medium text-primary bg-primary/10 rounded-full border border-primary/20"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {project.description}
-                </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
+                <div className="flex items-center gap-4 pt-2">
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    className="flex items-center gap-2 text-sm font-semibold hover:text-primary transition-colors"
+                  >
+                    <Github className="h-5 w-5" />
+                    Code
+                  </a>
+                  {project.demoUrl && (
                     <a
                       href={project.demoUrl}
                       target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      className="flex items-center gap-2 text-sm font-semibold hover:text-primary transition-colors"
                     >
-                      <ExternalLink size={20} />
+                      <ExternalLink className="h-5 w-5" />
+                      Live Demo
                     </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
-            target="_blank"
-            href="https://github.com/aditiisinha"
-          >
-            Check My Github <ArrowRight size={16} />
+        <div className="text-center mt-24">
+          <a href="https://github.com/aditiisinha" target="_blank" className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-1 transition-all duration-300">
+            View All Projects <ArrowRight className="h-5 w-5" />
           </a>
         </div>
       </div>
